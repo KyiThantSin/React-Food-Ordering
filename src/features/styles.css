@@ -1,0 +1,9 @@
+*{
+    color: rgb(72, 72, 72);
+}
+.recipesDetails{
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 3%;
+    padding: 0px 0px;
+}
