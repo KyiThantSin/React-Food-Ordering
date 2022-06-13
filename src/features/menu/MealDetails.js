@@ -1,11 +1,11 @@
 import { Container, Row , Col, Button} from "react-bootstrap";
-import Navbar from "../navbar/Navbar";
+import SideNavbar from "../navbar/SideNavbar";
 import "../styles.css";
 
-const RecipesDetails = () => {
+const MealDetails = () => {
     return ( 
         <Container className="recipesDetails" style={{textAlign:"center"}} >
-            <Navbar />
+            <SideNavbar />
             <div className="mt-4">
             <h3>Pizza</h3>
 
@@ -46,4 +46,4 @@ const RecipesDetails = () => {
      );
 }
  
-export default RecipesDetails;
+export default MealDetails;

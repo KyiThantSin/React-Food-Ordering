@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+  font-family: 'Kanit', sans-serif;
+}
 .App {
   text-align: center;
-}
-.recipesDetails{
-  border:1px solid transparent;
-  background-color: lightgray;
 }

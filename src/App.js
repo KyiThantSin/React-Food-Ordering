@@ -1,17 +1,19 @@
 import { Col, Container, Row} from 'react-bootstrap';
 import './App.css';
 import Menu from './features/menu/Menu';
-import RecipesDetails from './features/menu/RecipesDetails';
+import MealDetails from './features/menu/MealDetails';
+import MainNavbar from './features/navbar/MainNavbar';
 
 function App() {
   return (
     <Container>
+      <MainNavbar />
       <Row>
           <Col md={8}>
               <Menu />
           </Col>
           <Col md={4}>
-              <RecipesDetails />
+              <MealDetails />
           </Col>
       </Row>
     </Container>
