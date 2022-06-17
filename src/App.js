@@ -1,21 +1,23 @@
 import { Col, Container, Row} from 'react-bootstrap';
 import './App.css';
 import Menu from './features/menu/Menu';
-import MealDetails from './features/menu/MealDetails';
+import Details from './features/menu/Details';
 import MainNavbar from './features/navbar/MainNavbar';
+import {BrowserRouter as Router , Routes , Route, Navigate} from 'react-router-dom';
+
 
 function App() {
   return (
     <Container>
-      <MainNavbar />
-      <Row>
-          <Col md={8}>
-              <Menu />
-          </Col>
-          <Col md={4}>
-              <MealDetails />
-          </Col>
-      </Row>
+      <Router>
+        <MainNavbar />
+          <Routes>
+              <Route path='/' element={<Navigate replace to="/menu" />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/menu/:id" element={<Details />} />
+
+          </Routes>
+      </Router>
     </Container>
   );
 }

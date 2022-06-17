@@ -2,14 +2,31 @@
     color: rgb(72, 72, 72);
 }
 .recipesDetails{
-    background-color:#FAFAFA;
     border: 1px solid transparent;
     border-radius: 3%;
     padding: 0px 0px;
-    box-shadow: 3px 2px 3px whitesmoke;
 }
 .mealCard img{
     width: 98%;
     height: auto;
     border-radius: 5%;
+}
+.mealCard:hover{
+    cursor: pointer;
+    background-color:#fff5d0;
+    border-radius: 96%;
+}
+.details{
+    background-color: white;
+    border:1px solid transparent;
+    padding: 2%;
+    border-radius:3%;
+}
+.detailsImg{
+    background-color: antiquewhite;
+    border: 1px solid gold;
+    
+}
+.promotion{
+    background-color: pink;
 }

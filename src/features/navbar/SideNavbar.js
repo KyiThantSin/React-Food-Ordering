@@ -1,21 +1,27 @@
-import { Container, Row , Col, Button} from "react-bootstrap";
+import { useState } from "react";
+import { Button} from "react-bootstrap";
+import { addRating,removeRating } from "../menu/menuSlice";
+import { useDispatch } from "react-redux";
 
-const SideNavbar = () => {
+const SideNavbar = (props) => {
+    const dispatch = useDispatch();
+    //console.log(id)
+    const [toggle,setToggle] = useState(false)
+
+    const toggleHandler = () =>{
+        setToggle(!toggle);
+        toggle ? dispatch(removeRating(props.id)) : dispatch(addRating(props.id))
+    }
+
     return (
-        <Container className="mt-4">
-            <Row>
-                <Col md={6} xs={6}>
-                    <Button variant="light">
-                        <img src={require("../../icons/leftarrow.png")} alt="back arrow"/>
-                    </Button>                  
-                </Col>
-                <Col md={6} xs={6}>
-                    <Button variant="light">
-                        <img src={require("../../icons/starblack.png")} alt="star"/>
-                    </Button>
-                </Col>
-            </Row>
-        </Container>
+            <Button variant="light"
+                    className="mt-4"
+                    style={{cursor:"pointer"}}
+                    onClick={toggleHandler}>
+                <img src={ toggle ? require("../../icons/yellowstar.png") : 
+                                    require("../../icons/starblack.png")} 
+                        alt="star"/>
+            </Button> 
       );
 }
  

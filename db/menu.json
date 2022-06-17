@@ -1,0 +1,38 @@
+{
+    "menu":[
+        {
+            "id" : 0,
+            "name":"Pizza",
+            "price" : 16,
+            "rating" : 3  
+        },
+        {
+            "id" : 1,
+            "name":"Burger",
+            "price" : 32 ,
+            "rating":3 
+        },
+        {
+            "id" : 2,
+            "name":"Chicken",
+            "price" : 20 ,
+            "rating":3
+        },
+        {
+            "id" : 3,
+            "name":"Cheese",
+            "price" : 10,
+            "rating" : 3
+        },
+        {
+            "id" : 4,
+            "name":"Fries",
+            "price" : 9 ,
+            "rating":3 
+        }
+
+
+
+
+    ]
+}
