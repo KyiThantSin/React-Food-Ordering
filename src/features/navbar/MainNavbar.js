@@ -11,9 +11,11 @@ const MainNavbar = () => {
                     <img src={require('../../icons/spaghetti.png')} alt="logo" />
                 </Col>
                 <Col md={2} xs={3}>
-                    <Button variant="light">
-                        <img src={require('../../icons/shopping-cart.png')} alt="cart"/>
-                    </Button>
+                    <Link to="/cart">
+                        <Button variant="light">
+                            <img src={require('../../icons/shopping-cart.png')} alt="cart"/>
+                        </Button>
+                    </Link>
                 </Col>
                 <Col md={2} xs={3}>
                     <Link to="/menu">

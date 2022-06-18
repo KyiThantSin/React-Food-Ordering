@@ -4,7 +4,7 @@ import "../styles.css";
 import {selectItemById} from '../menu/menuSlice';
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { increment,decrement } from "../shoppingCart/cartSlice";
+import { increment,decrement,addingCart } from "../shoppingCart/cartSlice";
 
 const Details = () => {
     const {id} = useParams();
@@ -12,7 +12,7 @@ const Details = () => {
 
     const item = useSelector(state => selectItemById(state, id))
     
-    const number = useSelector(state => state.cart.value)
+    const number = useSelector(state => state.cart.value) //get update number of item
 
     return ( 
         <Container className="recipesDetails mt-3" style={{textAlign:"center"}} >
@@ -64,13 +64,19 @@ const Details = () => {
                     </Row>
 
                     <Row className="mb-4">
+
                         <Col md={6} xs={6}>
                             <h4><b>$ {item.price}</b></h4>
                         </Col>
+
                         <Col md={6} xs={6}>
                             <Button style={{backgroundColor:"#FDBA09",color:"white"}}
-                                    variant="outline-none">Add To Cart</Button>
+                                    variant="outline-none"
+                                    onClick={() => dispatch(addingCart({item,"number":number}))}>
+                                        Add To Cart
+                            </Button>
                         </Col>
+
                     </Row>
                     </div>
                     </div>
