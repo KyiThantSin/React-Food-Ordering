@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     cart:[],
-    value:1
+    value:1,
 }
 
 export const cartSlice = createSlice({
@@ -29,11 +29,15 @@ export const cartSlice = createSlice({
             }
             state.cart = state.cart.concat(cartItems)
             //console.log(state.cart)
+        },
+        deletingCart:(state,action)=>{
+           state.cart = state.cart.filter((item)=> item.id !== action.payload)
+           //console.log(current(cartItems))
         }
     }
 })
 
 
-export const {increment,decrement,addingCart} = cartSlice.actions;
+export const {increment,decrement,addingCart,deletingCart} = cartSlice.actions;
 
 export default cartSlice.reducer;

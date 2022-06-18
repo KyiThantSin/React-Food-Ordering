@@ -5,10 +5,12 @@ import {selectItemById} from '../menu/menuSlice';
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { increment,decrement,addingCart } from "../shoppingCart/cartSlice";
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
     const {id} = useParams();
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const item = useSelector(state => selectItemById(state, id))
     
@@ -72,7 +74,11 @@ const Details = () => {
                         <Col md={6} xs={6}>
                             <Button style={{backgroundColor:"#FDBA09",color:"white"}}
                                     variant="outline-none"
-                                    onClick={() => dispatch(addingCart({item,"number":number}))}>
+                                    onClick={() => {
+                                        dispatch(addingCart({item,"number":number}))
+                                        navigate("/")
+                                    }
+                                    }>
                                         Add To Cart
                             </Button>
                         </Col>
