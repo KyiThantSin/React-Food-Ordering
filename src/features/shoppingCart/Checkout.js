@@ -13,6 +13,7 @@ const Checkout = () => {
     //console.log(total)
     return ( 
         <Container className="mt-3">
+            
             <div className="checkout">
                 <h3>Summary</h3>
                 
@@ -61,7 +62,8 @@ const Checkout = () => {
 
             <Button style={{backgroundColor:"#FDBA09",color:"white"}}
                     className="mt-5 mb-4 float-end"
-                    variant="outline-none">
+                    variant="outline-none"
+                    disabled={ !total}>
                 Checkout Items
             </Button>
 

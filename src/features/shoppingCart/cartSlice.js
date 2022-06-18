@@ -25,7 +25,8 @@ export const cartSlice = createSlice({
                 "id":action.payload.item.id,
                 "name" : action.payload.item.name,
                 "price" : action.payload.item.price,
-                "number" : action.payload.number
+                "number" : action.payload.number,
+                "src":action.payload.item.src
             }
             state.cart = state.cart.concat(cartItems)
             //console.log(state.cart)

@@ -6,13 +6,12 @@ import { deletingCart } from "./cartSlice";
 
 const CartItem = (props) => {
     const dispatch = useDispatch();
-
     return (  
         <Container>   
             <Row  md={8} className="cart">
                     <Col md={4}>
-                        <img src={require('../../icons/cookie.jpg')} 
-                        alt="item"
+                        <img src={props.item.src} 
+                        alt={props.item.name}
                         width="50%"/>
                     </Col>
                     <Col md={6} xs={10} className="mt-2">

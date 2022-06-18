@@ -26,8 +26,8 @@ const Details = () => {
                 <div className="mt-4">
                     <h3>{item.name}</h3>
 
-                    <img src={require("../../icons/testImg.jpg")} 
-                        alt="food"
+                    <img src={item.src} 
+                        alt={item.name}
                         width="40%"
                         style={{borderRadius:"4%"}}
                         className="mt-2 detailsImg"

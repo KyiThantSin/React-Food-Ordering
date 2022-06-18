@@ -2,37 +2,47 @@
     "menu":[
         {
             "id" : 0,
-            "name":"Pizza",
+            "name":"Spicy Chicken",
             "price" : 16,
-            "rating" : 3  
+            "rating" : 4.2,
+            "src" :"https://c1.wallpaperflare.com/preview/442/387/640/chicken-spicy-chicken.jpg"
         },
         {
             "id" : 1,
             "name":"Burger",
             "price" : 32 ,
-            "rating":3 
+            "rating":4,
+            "src":"https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
         },
         {
             "id" : 2,
-            "name":"Chicken",
+            "name":"Pizza",
             "price" : 20 ,
-            "rating":3
+            "rating":3.6,
+            "src":"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg"
         },
         {
             "id" : 3,
-            "name":"Cheese",
-            "price" : 10,
-            "rating" : 3
+            "name":"Salad",
+            "price" : 12,
+            "rating" : 4.6,
+            "src":"https://img.taste.com.au/eda2xEj2/taste/2018/08/17-minute-caesar-salad_1980x1320-140424-1.jpg"
+
         },
         {
             "id" : 4,
-            "name":"Fries",
-            "price" : 9 ,
-            "rating":3 
+            "name":"Sushi",
+            "price" : 10 ,
+            "rating":3.2,
+            "src":"https://content.fun-japan.jp/renewal-prod/cms/articles/content/batchsalmonsushi001jpg_2021-02-25-10-35-44.jpg"
+        },
+        {
+            "id":5,
+            "name":"Caramel Cream",
+            "price":9,
+            "rating":3.6,
+            "src":"https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/17244-caramel-topped-ice-cream-dessert-760x580.jpg?ext=.jpg"
         }
-
-
-
 
     ]
 }
