@@ -1,5 +1,5 @@
 {
-    "menu":[
+    "main":[
         {
             "id" : 0,
             "name":"Spicy Chicken",
@@ -42,6 +42,88 @@
             "price":9,
             "rating":3.6,
             "src":"https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/17244-caramel-topped-ice-cream-dessert-760x580.jpg?ext=.jpg"
+        }
+
+    ],
+
+    "menuLists":[
+        {
+            "id" : 0,
+            "name":"Spicy Chicken",
+            "price" : 16,
+            "rating" : 4.2,
+            "src" :"https://c1.wallpaperflare.com/preview/442/387/640/chicken-spicy-chicken.jpg"
+        },
+        {
+            "id" : 1,
+            "name":"Burger",
+            "price" : 32 ,
+            "rating":4,
+            "src":"https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
+        },
+        {
+            "id" : 2,
+            "name":"Pizza",
+            "price" : 20 ,
+            "rating":3.6,
+            "src":"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg"
+        },
+        {
+            "id" : 3,
+            "name":"Salad",
+            "price" : 12,
+            "rating" : 4.6,
+            "src":"https://img.taste.com.au/eda2xEj2/taste/2018/08/17-minute-caesar-salad_1980x1320-140424-1.jpg"
+
+        },
+        {
+            "id" : 4,
+            "name":"Sushi",
+            "price" : 10 ,
+            "rating":3.2,
+            "src":"https://content.fun-japan.jp/renewal-prod/cms/articles/content/batchsalmonsushi001jpg_2021-02-25-10-35-44.jpg"
+        },
+        {
+            "id":5,
+            "name":"Caramel Cream",
+            "price":9,
+            "rating":3.6,
+            "src":"https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/17244-caramel-topped-ice-cream-dessert-760x580.jpg?ext=.jpg"
+        },
+        {
+            "id":6,
+            "name":"Apple Pie",
+            "price":8,
+            "rating":4,
+            "src":"https://www.momlovesbaking.com/wp-content/uploads/2020/08/Best-Ever-Apple-Pie-SQ.jpg"
+        },
+        {
+            "id":7,
+            "name":"Fries",
+            "price":12,
+            "rating":3.5,
+            "src":"https://tandoorikitchen.in/wp-content/uploads/2022/03/French-Fries-Recipe-1.jpg"
+        },
+        {
+            "id":8,
+            "name":"Donus",
+            "price":5,
+            "rating":3.3,
+            "src":"https://data.whicdn.com/images/204348204/original.jpg"
+        },
+        {
+            "id":9,
+            "name":"Taco",
+            "price":20,
+            "rating":4.6,
+            "src":"https://www.thespruceeats.com/thmb/GM1MSZqo_5oUGhF_p-OYuXz2cxI=/3799x2533/filters:no_upscale()/basic-tacos-recipe-with-ground-beef-and-beans-3054098-hero1-42c17bf93d3a4c58a8b967872dda45ba.jpg"
+        },
+        {
+            "id":10,
+            "name":"Mohinga",
+            "price":8,
+            "rating":4.5,
+            "src":"https://www.tastingtable.com/img/gallery/burmese-breakfast-stew-recipe/intro-1639583512.jpg"
         }
 
     ]

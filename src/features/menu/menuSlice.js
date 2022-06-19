@@ -1,8 +1,8 @@
-import { createSlice, createAsyncThunk, current } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk} from "@reduxjs/toolkit";
 import axiosObj from '../../utils/axiosObj';
   
-export const fetchData = createAsyncThunk('menu/fetchMenu', async () => {
-    const data = await axiosObj.get('/menu');
+export const fetchMainMenu = createAsyncThunk('menu/fetchMainMenu', async () => {
+    const data = await axiosObj.get('/main');
     return data.data;
 })
 
@@ -42,15 +42,15 @@ export const menuSlice = createSlice({
     },
     extraReducers(builder){
             builder
-                .addCase(fetchData.pending,(state,action)=>{
+                .addCase(fetchMainMenu.pending,(state,action)=>{
                     state.status = "loading"
                 })
-                .addCase(fetchData.fulfilled,(state,action)=>{
+                .addCase(fetchMainMenu.fulfilled,(state,action)=>{
                     state.status = "success";
                     state.menu = action.payload
                     //console.log(state.menu)
                 })
-                .addCase(fetchData.rejected,(state,action)=>{
+                .addCase(fetchMainMenu.rejected,(state,action)=>{
                     state.status = "failed";
 
                 })
@@ -64,6 +64,6 @@ export const selectItemById = (state, id) =>{
 
 export const {addRating,removeRating} = menuSlice.actions;
 
-export const menuData = (state) => state.menu.menu;
+export const mainMenuData = (state) => state.menu.menu;
 
 export default menuSlice.reducer;

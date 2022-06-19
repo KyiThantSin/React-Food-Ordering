@@ -41,7 +41,7 @@ const Details = () => {
                                <p> Substance consisting essentially of protein, carbohydrate, fat, and other nutrients used in the body of an organism to sustain growth and vital processes and to furnish energy.</p>
                            </Col>
                            <Col md={4}>
-                           <Row className="mt-4 m-5">
+                        <Row className="mt-4 m-3">
                         
                         <Col md={4} xs={4}>
                         <Button variant="light">
@@ -51,7 +51,7 @@ const Details = () => {
                         </Button>
                         </Col>
                         <Col md={4} xs={4}>
-                            <h4><b>{number}</b></h4>
+                            <h4 ><b>{number}</b></h4>
                         </Col>
                         <Col md={4} xs={4}>
                             <Button variant="light">
