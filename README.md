@@ -2,6 +2,9 @@
 
 This project was developed by using [React](https://reactjs.org/), [Redux](https://redux.js.org) with JSON server.
 
+## Demo
+https://food-order-v0.herokuapp.com/menu
+
 ## Features
 * Searching items
 * Details about items
